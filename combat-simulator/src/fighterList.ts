@@ -5,7 +5,8 @@ export let defaultFighterList: FighterList = {
     {
       id: 1,
       name: "Guerrero",
-      hp: 300,
+      maxHP: 300,
+      currentHP: 300,
       attack: 55,
       defense: 40,
       moves: [{ name: "Golpe", power: 50 }, { name: "Ejecutar", power: 100 }]
@@ -13,7 +14,8 @@ export let defaultFighterList: FighterList = {
     {
       id: 2,
       name: "Picaro",
-      hp: 225,
+      maxHP: 225,
+      currentHP: 225,
       attack: 52,
       defense: 43,
       moves: [{ name: "Puñalada", power: 50 }, { name: "Emboscada", power: 150 }]
@@ -21,7 +23,8 @@ export let defaultFighterList: FighterList = {
     {
       id: 3,
       name: "Mago",
-      hp: 165,
+      maxHP: 165,
+      currentHP: 165,
       attack: 65,
       defense: 30,
       moves: [

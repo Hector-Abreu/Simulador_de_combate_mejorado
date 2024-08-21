@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.skill-button {
+  background-color: #000000; /* Color de fondo */
+  border-radius: 8px; /* Bordes redondeados */
+  color: white; /* Color del texto */
+  padding: 12px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efectos de transición */
+}
+
+.skill-button:hover {
+  background-color: #ffffff; /* Cambio de color al pasar el ratón */
+  color: black;
+  border-radius: 8px; /* Bordes redondeados */
+  transform: scale(1.05); /* Efecto de "zoom" al pasar el ratón */
+}
+
+.skill-button:active {
+  background-color: #69c6fc; /* Cambio de color al hacer clic */
+  transform: scale(0.95); /* Reducir tamaño al hacer clic */
+}
+
+.skill-button:focus {
+  outline: none; /* Sin contorno al enfocar */
+  box-shadow: 0 0 0 3px rgba(105, 255, 255, 0.4); /* Sombra alrededor del botón */
+}

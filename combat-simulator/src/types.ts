@@ -1,7 +1,8 @@
 export interface Fighter {
   id: number;
   name: string;
-  hp: number;
+  maxHP: number;
+  currentHP: number;
   attack: number;
   defense: number;
   moves: Move[];

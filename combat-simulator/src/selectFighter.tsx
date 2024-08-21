@@ -10,13 +10,13 @@ interface SelectFighterProps {
 const SelectFighter: React.FC<SelectFighterProps> = ({ fighters, onSelect, player }) => {
   return (
     <div>
-      <h2>Select Fighter for Player {player}</h2>
+      <h2>Elige luchardor para el jugador {player}</h2>
       {fighters.map((fighter) => (
-        <p key={fighter.id}>
-          <button onClick={() => onSelect(fighter)}>
-            {fighter.name} (HP: {fighter.hp}, Attack: {fighter.attack}, Defense: {fighter.defense})
+        <div key={fighter.id}>
+          <button className="skill-button" onClick={() => onSelect(fighter)}>
+            {fighter.name} (Vida: {fighter.maxHP}, Ataque: {fighter.attack}, Defensa: {fighter.defense})
           </button>
-        </p>
+        </div>
       ))}
     </div>
   );
