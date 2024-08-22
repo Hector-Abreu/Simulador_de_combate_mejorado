@@ -13,6 +13,8 @@ const SelectFighter: React.FC<SelectFighterProps> = ({ fighters, onSelect, playe
       <h2>Elige luchardor para el jugador {player}</h2>
       {fighters.map((fighter) => (
         <div key={fighter.id}>
+          <img src={fighter.image2} alt={fighter.name} className="fighter-image" />
+          <br></br>
           <button className="skill-button" onClick={() => onSelect(fighter)}>
             {fighter.name} (Vida: {fighter.maxHP}, Ataque: {fighter.attack}, Defensa: {fighter.defense})
           </button>
