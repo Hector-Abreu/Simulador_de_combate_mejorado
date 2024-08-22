@@ -6,6 +6,8 @@ export interface Fighter {
   attack: number;
   defense: number;
   moves: Move[];
+  image: string;
+  image2: string;
 }
 
 export interface FighterList {

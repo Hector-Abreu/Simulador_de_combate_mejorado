@@ -39,3 +39,9 @@ code {
   outline: none; /* Sin contorno al enfocar */
   box-shadow: 0 0 0 3px rgba(105, 255, 255, 0.4); /* Sombra alrededor del botón */
 }
+
+.fighter-image {
+  width: 100px; /* Ajusta el tamaño según lo necesites */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 10px; /* Espacio entre la barra de vida y la imagen */
+}

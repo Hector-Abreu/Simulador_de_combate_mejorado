@@ -83,10 +83,12 @@ const Battle: React.FC = () => {
           <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
             <p><b>{battleState.player2.name}</b></p>
             <HealthBar currentHP={battleState.player2.currentHP} maxHP={battleState.player2.maxHP} />
+            <img src={battleState.player2.image2} alt={battleState.player2.name} className="fighter-image" />
           </div>
           <div style={{ position: 'absolute', bottom: '20px', left: '20px' }}>
             <p><b>{battleState.player1.name}</b></p>
             <HealthBar currentHP={battleState.player1.currentHP} maxHP={battleState.player1.maxHP} />
+            <img src={battleState.player1.image} alt={battleState.player1.name} className="fighter-image" />
             {battleState.winner ? (
               <h2>Fin del combate</h2>
             ) : (
