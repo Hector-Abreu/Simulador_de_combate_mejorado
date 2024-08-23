@@ -1,5 +1,5 @@
 import React from 'react';
-import Battle from './Battle';
+import Battle from './components/Battle';
 import './App.css';
 
 const App: React.FC = () => {

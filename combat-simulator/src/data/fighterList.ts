@@ -1,10 +1,10 @@
 import { FighterList } from "./types";
-import warriorImage1 from "./warriorBack.png"
-import warriorImage2 from "./warriorFront.png"
-import rogueImage1 from "./rogueBack.png"
-import rogueImage2 from "./rogueFront.png"
-import mageImage1 from "./mageBack.png"
-import mageImage2 from "./mageFront.png"
+import warriorImage1 from "../images/warriorBack.png"
+import warriorImage2 from "../images/warriorFront.png"
+import rogueImage1 from "../images/rogueBack.png"
+import rogueImage2 from "../images/rogueFront.png"
+import mageImage1 from "../images/mageBack.png"
+import mageImage2 from "../images/mageFront.png"
 
 
 export let defaultFighterList: FighterList = {

@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "src/types.ts", "src/Battle.tsx"  ]
+, "src/data/types.ts", "src/components/Battle.tsx"  ]
 }

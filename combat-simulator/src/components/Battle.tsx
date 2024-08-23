@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Fighter, BattleState } from './types';
+import { Fighter, BattleState } from '../data/types';
 import SelectFighter from './selectFighter';
-import { defaultFighterList } from './fighterList';
+import { defaultFighterList } from '../data/fighterList';
 import HealthBar from './HealthBar';
 
 const Battle: React.FC = () => {
@@ -17,7 +17,7 @@ const Battle: React.FC = () => {
       ...prevState,
       [player === 1 ? 'player1' : 'player2']: {
         ...fighter,
-        currentHP: fighter.maxHP, 
+        currentHP: fighter.maxHP,
       },
     }));
 
@@ -70,7 +70,7 @@ const Battle: React.FC = () => {
       )}
       {battleState.player1 && battleState.player2 && (
         <>
-          <div style={{ textAlign: 'left', top: '30px', marginLeft: '50px' }}>
+          <div>
             {battleState.winner ? (
               <>
                 <h2>¡{battleState.winner.name} ha ganado!</h2>
@@ -80,19 +80,19 @@ const Battle: React.FC = () => {
               <h2>Turno: {battleState.currentTurn}</h2>
             )}
           </div>
-          <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
+          <div className='fighter-container player2-container'>
             <p><b>{battleState.player2.name}</b></p>
-            <HealthBar currentHP={battleState.player2.currentHP} maxHP={battleState.player2.maxHP} />
+              <HealthBar currentHP={battleState.player2.currentHP} maxHP={battleState.player2.maxHP} />
             <img src={battleState.player2.image2} alt={battleState.player2.name} className="fighter-image" />
           </div>
-          <div style={{ position: 'absolute', bottom: '20px', left: '20px' }}>
+          <div className="fighter-container player1-container">
             <p><b>{battleState.player1.name}</b></p>
-            <HealthBar currentHP={battleState.player1.currentHP} maxHP={battleState.player1.maxHP} />
+              <HealthBar currentHP={battleState.player1.currentHP} maxHP={battleState.player1.maxHP} />
             <img src={battleState.player1.image} alt={battleState.player1.name} className="fighter-image" />
             {battleState.winner ? (
               <h2>Fin del combate</h2>
             ) : (
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '20px' }}>
+              <div className="skills-container">
                 <button className="skill-button" onClick={() => handleAttack(battleState.player1!, battleState.player2!, battleState.player1!.moves[0].power)}>
                   {battleState.player1!.moves[0].name}
                 </button>
