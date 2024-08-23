@@ -18,7 +18,7 @@ Turno de combate 1
 ![](https://github.com/Hector-Abreu/Simulador_de_combate_mejorado/blob/main/img/turn1.png)
 
 
-Turno de combate 2
+Turno de combate 3
 
 ![](https://github.com/Hector-Abreu/Simulador_de_combate_mejorado/blob/main/img/turn3.png)
 
